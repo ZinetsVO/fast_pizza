@@ -20,7 +20,7 @@ body {
 :root {
   --white: #fff;
   --accent: #CC166D;
-  --bg: #131313;
+  /* --bg: #131313; */
   --bgsecond: #202020;
   --text-color:#ffffff;
   --subtext-color:#00feb2;
@@ -76,7 +76,6 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: var(--text);
-  background-color: var(--bg);
   color: var(--text-color);
 }
 
