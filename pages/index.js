@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Location from '@/src/components/Location'
+import Header from '@/components/Header'
 
 
 
@@ -12,7 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
+        <Location/> 
+        <Header/>
       </main>
     </>
   )
