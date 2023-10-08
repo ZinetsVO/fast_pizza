@@ -1,4 +1,12 @@
 import fire from '@/static/icons/menu_icons/fire.svg'
+import pizza from '@/static/icons/menu_icons/pizza.svg'
+import sushi from '@/static/icons/menu_icons/sushi.svg'
+import drinks from '@/static/icons/menu_icons/drinks.svg'
+import snacks from '@/static/icons/menu_icons/snacks.svg'
+import combos from '@/static/icons/menu_icons/combos.svg'
+import desserts from '@/static/icons/menu_icons/desserts.svg'
+import sauces from '@/static/icons/menu_icons/sauces.svg'
+
 
 export const generalMenu = [
   {
@@ -50,49 +58,49 @@ export const generalMenu = [
 export const categories = [
   {id:1,
     name: 'Акції',
-    image: {fire},
-    slug: '#sales'
+    image: fire,
+    slug: '/sales'
   },
 
   {id:2,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Піца',
+    image: pizza,
+    slug: '/pizza'
   },
 
   {id:3,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Суші',
+    image:sushi,
+    slug: '/sushi'
   },
 
   {id:4,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Напої',
+    image: drinks,
+    slug: '/drinks'
   },
 
   {id:5,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Закуски',
+    image: snacks,
+    slug: '/snacks'
   },
 
   {id:6,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Комбо',
+    image: combos,
+    slug: '/combos'
   },
 
   {id:7,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Десерти',
+    image: desserts,
+    slug: '/desserts'
   },
 
   {id:8,
-    name: 'Акції',
-    image: 'fire.svg',
-    slug: '#sales'
+    name: 'Соуси',
+    image: sauces,
+    slug: '/sauces'
   }
 ]

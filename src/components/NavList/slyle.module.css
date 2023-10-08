@@ -4,6 +4,7 @@
     top: 83px;
     width: 100vw;
     transition: all .3s linear;
+    background-color: var(--white)
 }
 
 .nav__active {

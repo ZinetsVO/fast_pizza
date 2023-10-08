@@ -1,16 +1,16 @@
 :root {
   --white: #fff;
-  --accent: #CC166D;
-  /* --bg: #131313; */
+  --accent: #FF7010;
+  --subaccent: #bc520c;
   --bgsecond: #202020;
   --text-color:#191919;
   --subtext-color:#00feb2;
+  --border-color: #F0F0F0;
   --text: 12px;
   --subtitle-text:14px;
   --title-text:16px;
   --text-weight: 400;
   --title-weight:600;
-  --border-color: #F0F0F0;
 }
 
 * {

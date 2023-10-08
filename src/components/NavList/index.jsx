@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./slyle.module.css";
-import { generalMenu } from "@/constants";
+import { generalMenu } from "@/src/constants/index";
 import Link from "next/link";
 
 const NavList = ({menu}) => {

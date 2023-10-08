@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Location from '@/src/components/Location'
 import Header from '@/components/Header'
+import NavBar from '@/src/components/NavBar'
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Location/> 
         <Header/>
+        <NavBar/>
       </main>
     </>
   )
