@@ -1,6 +1,7 @@
 .location {
     padding:9px 0;
     border-bottom: 1px solid var(--border-color);
+    background-color: var(--white);
 }
 
 .location__inner{

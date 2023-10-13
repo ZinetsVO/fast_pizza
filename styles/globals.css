@@ -2,13 +2,15 @@
   --white: #fff;
   --accent: #FF7010;
   --subaccent: #bc520c;
-  --bgsecond: #202020;
+  --bg-color: #F9F9F9;
   --text-color:#191919;
   --subtext-color:#00feb2;
   --border-color: #F0F0F0;
   --text: 12px;
   --subtitle-text:14px;
+  --desctop-subtitle-text:18px;
   --title-text:16px;
+  --banner-text: 20px;
   --text-weight: 400;
   --title-weight:600;
 }
@@ -73,7 +75,7 @@ body {
 
 body {
   font-family: Inter;
-
+  background-color: var(--bg-color);
   font-style: normal;
   font-weight: var(--text-weight);
   font-size: var(--text);
@@ -118,6 +120,6 @@ form, label, input, p, input {
   margin: 0 auto;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}

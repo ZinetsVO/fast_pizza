@@ -6,7 +6,8 @@ import snacks from '@/static/icons/menu_icons/snacks.svg'
 import combos from '@/static/icons/menu_icons/combos.svg'
 import desserts from '@/static/icons/menu_icons/desserts.svg'
 import sauces from '@/static/icons/menu_icons/sauces.svg'
-
+import combobanner from '@/src/static/banner/combobanner.jpg'
+import pizzabanner from '@/src/static/banner/pizzabanner.jpg'
 
 export const generalMenu = [
   {
@@ -53,10 +54,8 @@ export const generalMenu = [
   },
 ];
 
-
-
 export const categories = [
-  {id:1,
+  { id:1,
     name: 'Акції',
     image: fire,
     slug: '/sales'
@@ -104,3 +103,46 @@ export const categories = [
     slug: '/sauces'
   }
 ]
+
+export const banners = [
+  {
+    id: 1,
+    slug: '/sales',
+    title: '3 середні піци по 169 грн',
+    image: combobanner
+  },
+
+  {
+    id: 2,
+    slug: '/sales',
+    title: 'Комбо меню по 300 грн',
+    image: pizzabanner
+  },
+
+  {
+    id: 3,
+    slug: '/sales',
+    title: '3 середні піци по 169 грн',
+    image: combobanner
+  },
+
+  {
+    id: 4,
+    slug: '/sales',
+    title: 'Комбо меню по 300 грн',
+    image: pizzabanner
+  },
+  {
+    id: 5,
+    slug: '/sales',
+    title: '3 середні піци по 169 грн',
+    image: combobanner
+  },
+
+  {
+    id: 6,
+    slug: '/sales',
+    title: 'Комбо меню по 300 грн',
+    image: pizzabanner
+  }]
+

@@ -8,16 +8,17 @@ const NavBar = () => {
   return (
     <div className={css.navBar}>
         <div className='container'>
-            <div className={css.navBar_inner}>
-                {categories.map( ({ name, image, slug })=> (
-                    <>
-                    <div className={css.category_item}> 
+            <ul className={css.navBar_inner}>
+                {categories.map( ({ id, name, image, slug })=> (
+                    
+                    <li className={css.category_item} key={id}> 
+                    <Link className={css.category_link} href={slug}>
                     <Image className={css.category_image} src={image} width="24" heght="15" alt={name}></Image>
-                    <Link className={css.category_title} href={slug}>{name}</Link>
-                    </div>
-                    </>
+                    {name}</Link>
+                    </li>
+                
                 ))}
-            </div>
+            </ul>
         </div>
     </div>
   )

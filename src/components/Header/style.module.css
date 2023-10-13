@@ -3,6 +3,7 @@
   border-bottom: 1px solid var(--border-color);
   position: relative;
   margin-bottom: 20px;
+  background-color: var(--white);
 }
 
 .header_inner {
