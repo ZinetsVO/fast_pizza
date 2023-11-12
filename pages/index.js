@@ -3,6 +3,9 @@ import Location from '@/src/components/Location'
 import Header from '@/components/Header'
 import NavBar from '@/src/components/NavBar'
 import Banners from '@/src/components/Banners'
+import AdressCheck from '@/src/components/AdressCheck'
+import ProductList from '@/src/components/ProductList'
+import { dataPizza } from '@/src/data/dataPizza'
 
 
 
@@ -20,6 +23,8 @@ export default function Home() {
         <Header/>
         <NavBar/>
         <Banners/>
+        <AdressCheck/>
+        <ProductList title='Піца' data={dataPizza}/>
       </main>
     </>
   )

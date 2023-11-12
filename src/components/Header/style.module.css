@@ -57,3 +57,7 @@
   transform: translateY(-9px) rotate(-45deg);
   width: 32px;
 }
+
+@media screen and (min-width: 992px) {
+  
+}

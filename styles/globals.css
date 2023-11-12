@@ -1,11 +1,17 @@
 :root {
+  --filter: rgba(25, 25, 25, 0.40);
   --white: #fff;
+  --black: #131313;
+  --red: #E23535;
+  --gray: #A5A5A5;
   --accent: #FF7010;
   --subaccent: #bc520c;
+  --light-primary: #FFEEE2;
   --bg-color: #F9F9F9;
   --text-color:#191919;
   --subtext-color:#00feb2;
   --border-color: #F0F0F0;
+  
   --text: 12px;
   --subtitle-text:14px;
   --desctop-subtitle-text:18px;
@@ -38,21 +44,24 @@ body {
 @media screen and (min-width: 375px) {
   :root {
  
-    --text: 16px;
+    --text: 14px;
+    --subtitle-text: 16px;
   }
 }
 
 @media screen and (min-width: 480px) {
   :root {
 
-    --text: 18px;
+    --text: 15px;
+    --subtitle-text: 17px;
   }
 }
 
 @media screen and (min-width: 768px) {
   :root {
     
-    --text: 20px;
+    --text: 15px;
+    --subtitle-text: 17px;
   }
 }
 
@@ -60,7 +69,8 @@ body {
 @media screen and (min-width: 1024px) {
   :root {
    
-    --text: 22px;
+    --text: 16px;
+    --subtitle-text: 18px;
   }
 
 }
@@ -69,7 +79,8 @@ body {
 @media screen and (min-width: 1224px) {
   :root {
    
-    --text: 22px;
+    --text: 16px;
+    --subtitle-text: 18px;
   }
 }
 
@@ -120,6 +131,8 @@ form, label, input, p, input {
   margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-  display: none;
+@media screen and (max-width: 992px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

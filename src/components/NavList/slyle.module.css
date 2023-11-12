@@ -1,10 +1,11 @@
 .nav__wraper {
     position: absolute;
     left: -100vw;
-    top: 83px;
+    top: 63px;
     width: 100vw;
     transition: all .3s linear;
-    background-color: var(--white)
+    background-color: var(--white);
+    z-index: 3;
 }
 
 .nav__active {
@@ -13,7 +14,7 @@
 }
 
 .nav__list {
-    padding: 0 20px;
+    padding: 20px  20px 0 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
