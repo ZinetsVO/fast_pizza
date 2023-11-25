@@ -27,6 +27,26 @@ const DetailItem = ({ item, detailHendler }) => {
     e.stopPropagation();
   };
 
+  
+
+
+  const addToCart = (id, imageUrl, title, price) => {
+
+    let newPrice = price + (basement === "Традиційне"? 0: 20) + (diametr === 20? 0: 20);
+    let data = {
+      id: id,
+      imageUrl: imageUrl,
+      title: title,
+      basement: basement,
+      diametr: diametr,
+      price: newPrice
+    };
+    
+    console.log("addToCart  ", data);
+
+   
+  }
+
   const {
     id,
     imageUrl,
@@ -147,7 +167,7 @@ const DetailItem = ({ item, detailHendler }) => {
               <span className={css.purchase__price}>Всього: {price} ₴</span>
               <span className={css.purchse__weight}>{weight} г</span>
             </div>
-            <button className={css.purchase__submit}>В корзину</button>
+            <button className={css.purchase__submit} onClick={ () => addToCart(id, imageUrl, title, price )}>В корзину</button>
           </div>
         </div>
       </div>

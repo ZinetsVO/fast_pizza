@@ -15,7 +15,7 @@ const Header = () => {
           <Logo />
 
           <div className={css.header_wrapper}>
-            <Cart />
+            <Cart  />
             <Burger menu={menu} setMenu={setMenu} />
             <NavList menu={menu} />
           </div>
