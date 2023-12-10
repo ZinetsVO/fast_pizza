@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import css from "./style.module.css";
 import Image from "next/image";
 import { dataFillers } from "@/src/data/dataFillers";
+import { useCart } from "@/src/components/Context/index";
 
 const DetailItem = ({ item, detailHendler }) => {
   const [basement, setBasement] = useState("Традиційне");
@@ -27,25 +28,24 @@ const DetailItem = ({ item, detailHendler }) => {
     e.stopPropagation();
   };
 
-  
 
+  const {addToCart} = useCart();
 
-  const addToCart = (id, imageUrl, title, price) => {
+  const selectHendler = (id, imageUrl, title, price, basement = "Традиційне", diametr = 20) => {
 
-    let newPrice = price + (basement === "Традиційне"? 0: 20) + (diametr === 20? 0: 20);
-    let data = {
-      id: id,
-      imageUrl: imageUrl,
-      title: title,
-      basement: basement,
-      diametr: diametr,
-      price: newPrice
-    };
-    
-    console.log("addToCart  ", data);
+  let newPrice = price + (basement === "Традиційне"? 0: 20) + (diametr === 20? 0: 20);
+  let data = {
+    id: id,
+    imageUrl: imageUrl,
+    title: title,
+    count: 1,
+    basement: basement,
+    diametr: diametr,
+    price: newPrice
+  };
 
-   
-  }
+  addToCart(data)
+}
 
   const {
     id,
@@ -167,7 +167,7 @@ const DetailItem = ({ item, detailHendler }) => {
               <span className={css.purchase__price}>Всього: {price} ₴</span>
               <span className={css.purchse__weight}>{weight} г</span>
             </div>
-            <button className={css.purchase__submit} onClick={ () => addToCart(id, imageUrl, title, price )}>В корзину</button>
+            <button className={css.purchase__submit} onClick={ () => selectHendler(id, imageUrl, title, price, basement, diametr)}>В корзину</button>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Location from '@/src/components/Location'
-import Header from '@/components/Header'
+import Header from '@/src/components/Header'
 import NavBar from '@/src/components/NavBar'
 import Banners from '@/src/components/Banners'
 import AdressCheck from '@/src/components/AdressCheck'
